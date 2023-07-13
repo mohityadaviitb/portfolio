@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact - Mohit Yadav</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel="stylesheet" href="{% static 'css/register.css' %}" /> 
+        <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="icon"
+        href="data:image/png;base64,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"
+        type="image/png">
+</head>
+<body>
+  <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+            <div class="nav-title">
+                <!-- <img class="sarclogo" src="{% static 'img/NTP/sarclogo.png' %}" /> -->
+
+                           <!-- <img class="sarclogo" src="../img/NTP/sarclogo.png" /> -->
+                           <a class="sarclogo" href="#">
+                            <img src="3.jpeg" alt="Mr." width="30" height="24" class="sarclogo">
+                            Mohit Yadav
+                          </a>
+            </div>
+        </div>
+   
+    
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="about.html">About<a>
+              <a href="contact.html">Contact<a>
+
+
+       
+        </div>
+    </div>
+            <div class="form">
+              <form id="form" method="POST" enctype="multipart/form-data">
+                <!-- {% csrf_token %} -->
+              <h2 style="text-align: center; font-size:40; color:white">Contact Us</h2><br/><br/>
+              <!-- <h4 style="color: red; text-align: center; margin: 1vh auto;">{{error}}</h4>
+                            <h4 style="color: green; text-align: center; margin: 1vh auto;">{{message}}</h4> -->
+            <input placeholder='Name' type="text"  name="name" id='name'  />
+          
+          <input placeholder='Email' type="email"  name="email" id="email"  />
+
+        
+         <input placeholder='Contact No' type="text" name="contact" id='contact' />
+
+
+       
+          <select value={this.state.value} name="date" id='date' onChange={this.handleChange}>
+            <option> Select Preferred mode for reply</option>
+            <option value="30th July">Call</option>
+            <option value="31st July">Whatsapp</option>
+            <option value="Both Work">Gmail</option>
+          </select >
+          <p style= "font-size:20; color:white; margin-bottom: 10px;">Upload Documents</p>
+          <input id="t03" type="file" name="resume"></input>
+          
+              <button type="submit" class="submit">SUBMIT</button>
+            </form>
+            </div>
+            </div>
+</body>
+</html>
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <footer class="footer">
+      <div class="footer__links">
+     
+        
+      </div>
+     
+       
+      <a href="https://www.linkedin.com/in/mohit-yadav-0a2574252" target="_blank" style="text-decoration: none;"><i class="fa fa-linkedin"></i> <img src="https://www.shareicon.net/data/512x512/2017/06/30/888065_logo_512x512.png" alt="LinkedIn Logo" height="50" style="vertical-align: middle;"> </a>
+    
+      
+    
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" . style="text-decoration: none;" ><i class="fa fa-linkedin"></i> <img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png" alt="LinkedIn Logo" height="30" style="vertical-align: middle;"> </a>
+      </div>
+      
+      <p class="footer__copy">&copy;  Mohit Yadav. All rights reserved.</p>
+    </footer>
+    
+    <script src="index.js"></script>
+    
+    
+    
+    
